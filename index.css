@@ -1,54 +1,49 @@
-/* General Body Styling */
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
   flex-direction: column;
   font-family: "Poppins", sans-serif;
-  margin: 0; /* Removes default margin */
-  padding: 0; /* Removes default padding */
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
-/* Marquee Styling */
 marquee {
-  background-color: rgb(86, 16, 16); /* Dark red background */
-  color: white; /* White text */
-  padding: 10px 0; /* Adds padding for better visibility */
-  font-size: 1rem; /* Ensures consistent font size */
+  background-color: rgb(86, 16, 16);
+  color: white;
+  padding: 10px 0;
+  font-size: 1rem;
 }
 
-/* Base styles for the logo */
 .logo {
-  width: 280px; /* Default width */
-  height: auto; /* Maintain aspect ratio */
-  margin: 10px; /* Default margin */
-  transition: all 0.3s ease; /* Smooth scaling */
+  width: 280px;
+  height: auto;
+  margin: 10px;
+  transition: all 0.3s ease;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .logo {
-      width: 200px; /* Smaller width for tablets */
-      margin: 8px; /* Adjust margin */
+      width: 200px;
+      margin: 8px;
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-      width: 150px; /* Smaller width for mobile phones */
-      margin: 5px; /* Adjust margin */
+      width: 150px;
+      margin: 5px;
   }
 }
 
-/* Icons Styling */
 .icons a {
-  transition: color 0.3s ease; /* Smooth color transition */
-  font-size: x-large; /* Larger icon size */
-  color: #000; /* Default icon color */
+  transition: color 0.3s ease;
+  font-size: x-large;
+  color: #000;
 }
 
 .icons a:hover {
-  color: #960606 !important; /* Red icon color on hover */
+  color: #960606 !important;
 }
 
 .carousel-item img{
@@ -57,17 +52,15 @@ marquee {
   object-fit:fill ;
 }
 
-/* Container */
 .container {
   padding: 20px;
   max-width: 1200px;
   margin: 20px auto;
 }
 
-/* Unique Stylish Heading */
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 5rem; /* Default size */
+  font-size: 5rem;
   font-weight: 700;
   letter-spacing: -0.03em;
   text-align: center;
@@ -75,7 +68,7 @@ h2 {
   color: #000000;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   position: relative;
-  display: block; /* Ensure it takes full width */
+  display: block;
 }
 
 h2::after {
@@ -89,7 +82,6 @@ h2::after {
   transform: translateX(-50%);
 }
 
-/* Filter Buttons */
 .filter-btn {
   margin: 10px;
   padding: 12px 24px;
@@ -105,11 +97,10 @@ h2::after {
   cursor: pointer;
 }
 
-/* Hover Effect for Buttons */
 .filter-btn:hover {
-  background: rgba(0, 0, 0, 0.05); /* Light background on hover */
-  transform: translateY(-3px); /* Slight lift */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  background: rgba(0, 0, 0, 0.05);
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .filter-btn::before {
@@ -133,7 +124,6 @@ h2::after {
   box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Slider Container */
 .slider-container {
   overflow: hidden;
   position: relative;
@@ -141,13 +131,12 @@ h2::after {
   margin-top: 10px;
 }
 
-/* Product Card */
 .product-card {
-  min-width: 300px; /* Adjusted for responsiveness */
-  height: auto; /* Height will adjust based on content */
+  min-width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Ensures even spacing */
+  justify-content: space-between;
   align-items: center;
   margin: 10px;
   background: #fff;
@@ -162,25 +151,22 @@ h2::after {
   font-weight: bold;
 }
 
-/* Product Card Image */
 .product-card img {
   width: 100%;
   max-height: 230px;
   object-fit: cover;
   border-radius: 10px;
-  margin-bottom: 10px; /* Space below the image */
+  margin-bottom: 10px;
 }
 
-/* Product Info */
 .product-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 5px; /* Space between name and price */
-  margin-bottom: 50px; /* Ensures enough space before button */
+  gap: 5px;
+  margin-bottom: 50px;
 }
 
-/* Product Name */
 .product-name {
   font-weight: bold;
   text-align: center;
@@ -188,18 +174,16 @@ h2::after {
   margin-top: 5px;
 }
 
-/* Price */
 .price {
   font-size: 18px;
   font-weight: bold;
   color: #000000;
 }
 
-/* Add to Cart and Download Button Styling */
 .add-to-cart,
 .download-btn {
   position: absolute;
-  bottom: 15px; /* Ensure it does not cover the price */
+  bottom: 15px;
   left: 50%;
   transform: translateX(-50%);
   background: linear-gradient(45deg, #ff416c, #ff4b2b);
@@ -211,37 +195,33 @@ h2::after {
   border: none;
   transition: all 0.3s ease;
   box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-  opacity: 0; /* Hide by default */
+  opacity: 0;
 }
 
-/* Hover Effect for Add to Cart and Download Buttons */
 .product-card:hover .add-to-cart,
 .product-card:hover .download-btn {
   opacity: 1;
-  bottom: 20px; /* Moves up smoothly */
+  bottom: 20px;
   transition: all 0.3s ease;
 }
 
-/* Download Button Specific Styling */
 .download-btn {
-  background: linear-gradient(45deg, #4caf50, #81c784); /* Green gradient for download */
+  background: linear-gradient(45deg, #4caf50, #81c784);
 }
 
 .download-btn:hover {
-  background: linear-gradient(45deg, #388e3c, #66bb6a); /* Darker green on hover */
+  background: linear-gradient(45deg, #388e3c, #66bb6a);
 }
 
-/* Slider */
 .slider {
   display: flex;
-  gap: 30px; /* Adds space between product cards */
+  gap: 30px;
   padding: 10px;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   h2 {
-    font-size: 2.5rem; /* Smaller size for tablets */
+    font-size: 2.5rem;
   }
 
   .filter-btn {
@@ -250,12 +230,12 @@ h2::after {
   }
 
   .product-card {
-    min-width: 250px; /* Smaller width for tablets */
+    min-width: 250px;
     padding: 15px;
   }
 
   .product-card img {
-    max-height: 180px; /* Smaller image height for tablets */
+    max-height: 180px;
   }
 
   .add-to-cart,
@@ -267,7 +247,7 @@ h2::after {
 
 @media (max-width: 480px) {
   h2 {
-    font-size: 2rem; /* Smaller size for mobile */
+    font-size: 2rem;
   }
 
   .filter-btn {
@@ -277,12 +257,12 @@ h2::after {
   }
 
   .product-card {
-    min-width: 200px; /* Smaller width for mobile */
+    min-width: 200px;
     padding: 10px;
   }
 
   .product-card img {
-    max-height: 150px; /* Smaller image height for mobile */
+    max-height: 150px;
   }
 
   .add-to-cart,
@@ -310,14 +290,14 @@ h2::after {
   font-weight: 700;
   margin-bottom: 20px;
   letter-spacing: -1px;
-  color: #8b1313; /* Solid vibrant color */
+  color: #8b1313;
 }
 
 .custom-text {
   font-size: 18px;
   line-height: 1.7;
   margin-bottom: 30px;
-  color: rgba(255, 255, 255, 0.9); /* Brighter font color */
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .custom-button {
@@ -367,7 +347,6 @@ h2::after {
   z-index: 2;
 }
 
-/* New Animation: Floating Effect */
 @keyframes float {
   0% {
     transform: translateY(0);
@@ -384,18 +363,17 @@ h2::after {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .custom-heading {
-    font-size: 36px; /* Smaller font for mobile */
+    font-size: 36px;
   }
 
   .custom-text {
-    font-size: 16px; /* Smaller font for mobile */
+    font-size: 16px;
   }
 
   .custom-button {
-    padding: 12px 30px; /* Smaller button for mobile */
+    padding: 12px 30px;
     font-size: 16px;
   }
 }
@@ -475,7 +453,6 @@ section {
   animation: fadeIn 2s ease-in-out;
 }
 
-/* Decorative Lines */
 .section-line-top,
 .section-line-bottom {
   width: 100%;
@@ -485,7 +462,6 @@ section {
   position: relative;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .hero-section h1 {
     font-size: 2.5rem;
@@ -532,7 +508,6 @@ section {
   }
 }
 
-/* Animations */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -570,7 +545,6 @@ section {
   text-align: center;
 }
 
-/* Divider Styling */
 .brand-divider {
   border: none;
   height: 2px;
@@ -579,7 +553,6 @@ section {
   margin: 20px auto;
 }
 
-/* Brand Container */
 .brand-container {
   display: flex;
   justify-content: center;
@@ -596,7 +569,6 @@ section {
   padding: 0 30px;
 }
 
-/* Brand Logos */
 .brand-logo {
   max-width: 150px;
   height: auto;
@@ -609,7 +581,6 @@ section {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
   .brand-wrapper {
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -645,52 +616,51 @@ section {
 .quote {
   text-align: center;
   color: white;
-  font-size: 3rem; /* Increased font size for prominence */
+  font-size: 3rem;
   font-weight: bold;
-  font-family: 'Poppins', sans-serif; /* Stylish font */
+  font-family: 'Poppins', sans-serif;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  backdrop-filter: blur(8px); /* Background blur effect */
-  padding: 20px 40px; /* Padding for better spacing */
-  border-radius: 15px; /* Rounded corners for modern look */
-  border: 2px solid rgba(255, 255, 255, 0.2); /* Subtle border */
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px);
+  padding: 20px 40px;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .quote {
-      font-size: 2.5rem; /* Slightly reduce font size for large tablets and small desktops */
+      font-size: 2.5rem;
   }
 }
 
 @media (max-width: 992px) {
   .quote {
-      font-size: 2.2rem; /* Adjust font size for tablets */
+      font-size: 2.2rem;
   }
 }
 
 @media (max-width: 768px) {
   .quote {
-      font-size: 2rem; /* Adjust font size for smaller tablets */
-      padding: 15px 30px; /* Adjust padding for smaller screens */
+      font-size: 2rem;
+      padding: 15px 30px;
   }
 }
 
 @media (max-width: 576px) {
   .quote {
-      font-size: 1.8rem; /* Adjust font size for mobile devices */
-      padding: 10px 20px; /* Adjust padding for smaller screens */
+      font-size: 1.8rem;
+      padding: 10px 20px;
   }
 
   .parallax {
-      height: 40vh; /* Reduce height for smaller screens */
+      height: 40vh;
   }
 }
 
 @media (max-width: 400px) {
   .quote {
-      font-size: 1.5rem; /* Further reduce font size for very small devices */
+      font-size: 1.5rem;
   }
 }
 
@@ -812,13 +782,11 @@ section {
   box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
 }
 
-
 .container-1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .footer-row {
   display: flex;
@@ -827,12 +795,10 @@ section {
   gap: 40px;
 }
 
-
 .footer-col {
   flex: 1;
   min-width: 280px;
 }
-
 
 .footer-title {
   text-transform: uppercase;
@@ -845,17 +811,14 @@ section {
   padding-bottom: 5px;
 }
 
-
 .footer-links {
   list-style: none;
   padding: 0;
 }
 
-
 .footer-links li {
   margin-bottom: 12px;
 }
-
 
 .footer-links a {
   text-decoration: none;
@@ -864,12 +827,10 @@ section {
   font-size: 1rem;
 }
 
-
 .footer-links a:hover {
   color: #D32F2F;
   transform: translateX(5px);
 }
-
 
 .social-icon-1 {
   margin-right: 20px;
@@ -878,12 +839,10 @@ section {
   transition: color 0.4s ease, transform 0.3s ease;
 }
 
-
 .social-icon-1:hover {
   color: #D32F2F;
   transform: scale(1.3);
 }
-
 
 .footer-divider {
   border: 0;
@@ -891,13 +850,11 @@ section {
   margin: 40px 0;
 }
 
-
 .footer-bottom {
   text-align: center;
   font-size: 1.2rem;
   color: #9e9d9d;
 }
-
 
 @media (max-width: 768px) {
   .footer-col {
@@ -906,17 +863,12 @@ section {
   }
 }
 
-
 @media (max-width: 480px) {
   .footer-title {
     font-size: 1.1rem;
   }
 
-
   .footer-links a {
     font-size: 0.9rem;
   }
 }
-
-
-

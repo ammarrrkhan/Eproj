@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Poppins:wght@300;400;600&display=swap');
 
-/* Base Styles */
+
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
@@ -24,7 +24,7 @@ marquee {
   font-size: 1rem;
 }
 
-/* Navbar Styling */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -106,7 +106,7 @@ marquee {
   color: #d32f2f !important;
 }
 
-/* About Text */
+
 .about-text,
 .mission-section,
 .why-choose-us {
@@ -129,7 +129,7 @@ marquee {
   color: #FF5733;
 }
 
-/* About Section */
+
 .about-section {
   text-align: center;
   padding: 60px 20px;
@@ -140,7 +140,6 @@ marquee {
   font-family: 'Orbitron', cursive;
   color: #b22222;
   font-size: 2.5rem;
-  /* Increased font size */
   margin-bottom: 40px;
 }
 
@@ -161,7 +160,7 @@ marquee {
   font-family: 'Orbitron', cursive;
 }
 
-/* Why Choose Section */
+
 .why-choose {
   text-align: center;
   padding: 60px 20px;
@@ -172,7 +171,6 @@ marquee {
   font-family: 'Orbitron', cursive;
   color: #b22222;
   font-size: 2.5rem;
-  /* Increased font size */
   margin-bottom: 40px;
 }
 
@@ -264,7 +262,7 @@ marquee {
   transform: scaleX(1);
 }
 
-/* Video Styling */
+
 #about-us-video {
   width: 100%;
   max-width: 800px;
@@ -278,7 +276,7 @@ marquee {
   opacity: 0.5;
 }
 
-/* Footer Styling */
+
 .footer {
   background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
   color: white;
@@ -360,7 +358,7 @@ marquee {
   color: #9e9d9d;
 }
 
-/* Responsive Adjustments */
+
 @media (max-width: 992px) {
   .navbar {
     height: auto;
@@ -426,11 +424,10 @@ marquee {
   color: #b22222;
 }
 
-/* Global h2 Styling */
+
 h2 {
   font-family: 'Orbitron', cursive;
   color: #b22222;
   font-size: 2.5rem;
-  /* Increased font size */
   margin-bottom: 20px;
 }

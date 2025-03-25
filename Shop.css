@@ -1,4 +1,4 @@
-/* General Styles */
+
 body {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   display: flex;
@@ -8,7 +8,7 @@ body {
   padding: 0;
 }
 
-/* Marquee Styling */
+
 marquee {
   background-color: rgb(86, 16, 16);
   color: white;
@@ -16,7 +16,7 @@ marquee {
   font-size: 1rem;
 }
 
-/* Navbar Styling */
+
 .navbar {
   position: sticky;
   top: 0;
@@ -67,9 +67,9 @@ marquee {
   bottom: -5px;
   width: 100%;
   height: 3px;
-  background: #b22222; /* Updated to #b22222 */
+  background: #b22222; 
   border-radius: 2px;
-  box-shadow: 0 2px 4px rgba(178, 34, 34, 0.2); /* Updated to #b22222 */
+  box-shadow: 0 2px 4px rgba(178, 34, 34, 0.2); 
   transition: transform 0.4s ease-in-out;
   transform: scaleX(0);
   transform-origin: center;
@@ -80,7 +80,7 @@ marquee {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #d32f2f; /* Updated to #d32f2f */
+  color: #d32f2f; 
 }
 
 .icons {
@@ -95,10 +95,10 @@ marquee {
 }
 
 .icons a:hover {
-  color: #d32f2f !important; /* Updated to #d32f2f */
+  color: #d32f2f !important; 
 }
 
-/* Main Card Styling */
+
 .card {
   background-color: #ffffff;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -115,20 +115,20 @@ marquee {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Hover Effect */
+
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-/* Card Image Styling */
+
 .card img {
   height: 200px;
   object-fit: contain;
   padding: 10px;
 }
 
-/* Card Body Styling */
+
 .card-body {
   text-align: center;
   padding: 20px;
@@ -138,7 +138,7 @@ marquee {
   justify-content: space-between;
 }
 
-/* Card Title Styling */
+
 .card-title {
   color: #000000;
   font-size: 18px;
@@ -146,7 +146,7 @@ marquee {
   margin-bottom: 10px;
 }
 
-/* Card Text (Price) Styling */
+
 .card-text {
   color: #000000;
   font-size: 16px;
@@ -154,15 +154,15 @@ marquee {
   font-weight: 400;
 }
 
-/* Card Footer (For Button Consistency) */
+
 .card-footer {
   margin-top: auto;
   padding-top: 10px;
 }
 
-/* Buy Now Button Styling */
+
 .btn-buy {
-  background-color: #b22222; /* Updated to #b22222 */
+  background-color: #b22222; 
   color: white;
   border: none;
   padding: 10px 20px;
@@ -174,13 +174,13 @@ marquee {
   visibility: visible;
 }
 
-/* Buy Now Button Hover Effect */
+
 .btn-buy:hover {
-  background-color: #d32f2f; /* Updated to #d32f2f */
+  background-color: #d32f2f;
   color: #ffffff;
 }
 
-/* Download Button Styling */
+
 .btn-download {
   background-color: #4caf50;
   color: white;
@@ -194,19 +194,19 @@ marquee {
   visibility: visible;
 }
 
-/* Download Button Hover Effect */
+
 .btn-download:hover {
   background-color: #388e3c;
   color: #ffffff;
 }
 
-/* If No Button Needed, Use 'hidden' Class */
+
 .btn-buy.hidden,
 .btn-download.hidden {
   visibility: hidden;
 }
 
-/* Navigation Button Section */
+
 .nav-buttons {
   display: flex;
   justify-content: center;
@@ -214,9 +214,9 @@ marquee {
   margin-bottom: 40px;
 }
 
-/* Navigation Buttons */
+
 .nav-buttons .btn {
-  background-color: #b22222; /* Updated to #b22222 */
+  background-color: #b22222; 
   border: none;
   color: white;
   transition: background-color 0.3s;
@@ -227,26 +227,26 @@ marquee {
 }
 
 .nav-buttons .btn:hover {
-  background-color: #d32f2f; /* Updated to #d32f2f */
+  background-color: #d32f2f; 
 }
 
-/* Headings (h2 and h4) Styling */
+
 h2,
 h4 {
-  color: #b22222; /* Updated to #b22222 */
+  color: #b22222; 
   text-align: center;
   margin-bottom: 30px;
   font-weight: 600;
 }
 
-/* Main Container Styling */
+
 .container {
   padding: 40px 20px;
   max-width: 1400px;
   margin: 0 auto;
 }
 
-/* Row Styling (Flex for Responsiveness) */
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -254,7 +254,7 @@ h4 {
   margin: 0 -15px;
 }
 
-/* Responsive Column Sizes */
+
 .col-md-5,
 .col-sm-6,
 .col-md-4,
@@ -265,18 +265,18 @@ h4 {
   max-width: 300px;
 }
 
-/* Large Bold Title (h5) */
+
 h5 {
   font-weight: bold;
   font-size: x-large;
 }
 
-/* Main Page Title (h1) */
+
 h1 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Responsive Grid for Perfect Card Layout */
+
 @media (max-width: 768px) {
   .card {
     width: 100%;
@@ -285,7 +285,7 @@ h1 {
   }
 }
 
-/* Footer Styling */
+
 .footer {
   background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
   color: white;
@@ -316,7 +316,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 1.5px;
   font-size: 1.3rem;
-  border-bottom: 3px solid #b22222; /* Updated to #b22222 */
+  border-bottom: 3px solid #b22222; 
   display: inline-block;
   padding-bottom: 5px;
 }
@@ -338,7 +338,7 @@ h1 {
 }
 
 .footer-links a:hover {
-  color: #d32f2f; /* Updated to #d32f2f */
+  color: #d32f2f; 
   transform: translateX(5px);
 }
 
@@ -355,7 +355,7 @@ h1 {
 }
 
 .social-icon:hover {
-  color: #d32f2f; /* Updated to #d32f2f */
+  color: #d32f2f; 
   transform: scale(1.3);
 }
 
@@ -371,7 +371,7 @@ h1 {
   color: #9e9d9d;
 }
 
-/* Popup Overlay */
+
 .popup-overlay {
   position: fixed;
   top: 0;
@@ -395,7 +395,7 @@ h1 {
   text-align: center;
   width: 90%;
   max-width: 400px;
-  box-shadow: 0px 0px 15px rgba(178, 34, 34, 0.8); /* Updated to #b22222 */
+  box-shadow: 0px 0px 15px rgba(178, 34, 34, 0.8); 
   animation: popUp 0.4s ease-out;
   position: relative;
 }
@@ -406,10 +406,10 @@ h1 {
 }
 
 .popup-content h2 {
-  color: #b22222; /* Updated to #b22222 */
+  color: #b22222;
 }
 
-/* Spin Wheel */
+
 .wheel-container {
   position: relative;
   margin: 20px auto;
@@ -419,12 +419,12 @@ h1 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 5px solid #b22222; /* Updated to #b22222 */
+  border: 5px solid #b22222;
   transition: transform 4s ease-out;
 }
 
 .spin-btn, .save-btn {
-  background: #b22222; /* Updated to #b22222 */
+  background: #b22222; 
   color: white;
   padding: 10px 20px;
   border: none;
@@ -436,7 +436,7 @@ h1 {
 
 .spin-btn:hover, .save-btn:hover {
   background: black;
-  color: #d32f2f; /* Updated to #d32f2f */
+  color: #d32f2f;
 }
 
 .close-popup {
@@ -451,7 +451,7 @@ h1 {
   right: 10px;
 }
 
-/* Responsive Styles */
+
 @media (max-width: 992px) {
   .navbar {
     height: auto;
